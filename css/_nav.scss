@@ -1,12 +1,12 @@
 $nav_magassag: 8vh;
 
-.nav {    
-    position: absolute;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%);
-    
-    &__ul {
+.nav {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+
+  &__ul {
     height: $nav_magassag;
     display: flex;
 
@@ -14,13 +14,20 @@ $nav_magassag: 8vh;
     align-items: center;
     list-style-type: none;
 
+    li {
+      cursor: pointer;
+    }
     li:first-child {
-        display: none;
+      display: none;
     }
-        p{
-            font-size: calc(14px + (18 - 14) * ((100vw - 200px) / (1920 - 200))); 
-            color:  $szin-13;
-            font-weight: 700;
-        }
+    p {
+      font-size: calc(14px + (18 - 14) * ((100vw - 200px) / (1920 - 200)));
+      color: $szin-13;
+      font-weight: 700;
+      transition: 0.3s;
+      &:hover {
+        color: $szin-03;
+      }
     }
+  }
 }

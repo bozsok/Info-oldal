@@ -1,51 +1,58 @@
 .section-01 {
-    height: 100vh;
-    text-align: center;
-    background-image: url("../img/hatter.svg");
-    background-position: 45%;
-    background-size: cover;
-    
+  height: 100vh;
+  text-align: center;
+  background-image: url("../img/hatter.svg");
+  background-position: 45%;
+  background-size: cover;
 
-    &__wrapper {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-        display: grid;
-    }
+    display: grid;
+  }
 
-    h1 {
-        min-width: max-content;
-        color: $szin-10;
-        margin-bottom: 6vh;
+  h1 {
+    min-width: max-content;
+    color: $szin-10;
+    margin-bottom: 6vh;
 
-        span {
-            color: $szin-13;
-        }        
+    span {
+      color: $szin-13;
     }
+  }
 
-    p {
-        color: $szin-10;
-        margin-bottom: 6vh;
-    }
+  p {
+    color: $szin-10;
+    margin-bottom: 6vh;
+  }
 
-    .illustration {
-        grid-row: 2/3;
-        width: 70%;
-        margin: 0 auto;
-        margin-bottom: 6vh;
+  .illustration {
+    grid-row: 2/3;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+  }
+  .btn-01,
+  .btn-02 {
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 50%;
+  }
+  .btn-01 {
+    margin-bottom: 2rem;
+    transition: 0.3s;
+    &:hover {
+      background-color: $szin-02;
     }
-    .btn-01,
-    .btn-02 {        
-        margin: 0 auto;        
-        padding: 1rem 0;
-        width: 50%;
+  }
+  .btn-02 {
+    transition: 0.3s;
+    background-color: $szin-10;
+    &:hover {
+      background-color: $szin-13;
     }
-    .btn-01 {
-        margin-bottom: 2rem;
-    }
-    .btn-02 {
-        background-color: $szin-10;
-    }
+  }
 }

@@ -1,0 +1,51 @@
+//Színek
+$szin-01: #FDC100;
+$szin-02: #F18A00;
+$szin-03: #ED7962;
+$szin-04: #D64C49;
+$szin-05: #A5C86A;
+$szin-06: #4B9074;
+$szin-07: #284D3B;
+$szin-08: #E2E8F6;
+$szin-09: #C0CEEB;
+$szin-10: #A0B2DA;
+$szin-11: #D68651;
+$szin-12: #B46B42;
+$szin-13: #5a6086;
+$szin-14: #111538;
+$szin-15: #060725;
+// Font
+$font-primary: 'Roboto', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0; 
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // Browser default font-size: 16px -> 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300;   
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: calc(24px + (45 - 24) * ((100vw - 200px) / (1920 - 200)));
+}
+
+p {
+    margin: 0 auto;
+    font-size: calc(10px + (18 - 10) * ((100vw - 200px) / (1920 - 200))); /*1920px-nél 1.8rem (18px) a betű, 200px-nél 1rem-es*/
+    line-height: calc(14px + (24 - 14) * ((100vw - 200px) / (1920 - 200)));
+}

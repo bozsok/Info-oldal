@@ -1,0 +1,26 @@
+$nav_magassag: 8vh;
+
+.nav {    
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    
+    &__ul {
+    height: $nav_magassag;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+
+    li:first-child {
+        display: none;
+    }
+        p{
+            font-size: calc(14px + (18 - 14) * ((100vw - 200px) / (1920 - 200))); 
+            color:  $szin-13;
+            font-weight: 700;
+        }
+    }
+}

@@ -152,6 +152,40 @@ p {
   background-color: #5a6086;
 }
 
+.section-03 {
+  height: 14rem;
+  background-color: #ed7962;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: 'Amatic SC',cursive;
+}
+
+.section-03 h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+  margin-bottom: 1.2rem;
+  font-size: calc(14px + (40 - 14) * ((100vw - 200px) / (1920 - 200)));
+}
+
+.section-03 p {
+  margin: 0;
+  margin-right: 20vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: calc(12px + (20 - 12) * ((100vw - 200px) / (1920 - 200)));
+}
+
 .btn {
   background-color: #fdc100;
   border-radius: 3rem;
@@ -162,7 +196,8 @@ p {
 .btn p {
   color: #fff;
   margin-bottom: 0;
-  font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+  font-size: calc(12px + (16 - 12) * ((100vw - 200px) / (1920 - 200)));
+  letter-spacing: .07rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -237,11 +272,24 @@ p {
   .section-01__wrapper .btn-02 {
     margin-left: 24rem;
   }
+  .section-03 {
+    height: 18rem;
+  }
+  .section-03 h2 {
+    width: 80%;
+    margin-bottom: 1.6rem;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
   .section-01__wrapper .illustration {
     width: 25vw;
+  }
+  .section-03 {
+    height: 22rem;
+  }
+  .section-03 h2 {
+    margin-bottom: 2rem;
   }
 }
 
@@ -249,6 +297,12 @@ p {
   .nav {
     width: 100%;
     max-width: 192rem;
+  }
+  .section-03 {
+    height: 24rem;
+  }
+  .section-03 h2 {
+    margin-bottom: 2.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

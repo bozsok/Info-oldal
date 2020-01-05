@@ -1,4 +1,4 @@
-.section-01 {
+.section-01 {  
   height: 100vh;
   text-align: center;
   background-image: url("../img/hatter.svg");
@@ -10,6 +10,7 @@
 
   &__wrapper {
     display: grid;
+    justify-items: center;
   }
 
   h1 {
@@ -35,8 +36,6 @@
   .btn-01,
   .btn-02 {
     margin: 0 auto;
-    padding: 1rem 0;
-    width: 17rem;
   }
   .btn-01 {
     margin-bottom: 2rem;

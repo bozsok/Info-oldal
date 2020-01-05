@@ -1,4 +1,8 @@
+/*********************************
+768px széles kijelzőhöz
+*********************************/
 @media only screen and (min-width: 768px) {
+  // Navigáció
   .nav {
     width: 95%;
     max-width: 128rem;
@@ -20,7 +24,7 @@
       }
     }
   }
-
+  // Landing page
   .section-01 {
     background-image: url("../img/hatterEsGyerek.svg");
     background-position: 35%;
@@ -30,9 +34,11 @@
       grid-template-columns: repeat(2, 1fr);
       width: 80%;
       max-width: 128rem;
+      justify-items: left;
       h1,
       p {
         margin: 0;
+        width: 100%;
         grid-column: 1/2;
         align-self: center;
         text-align: left;
@@ -59,17 +65,56 @@
       }
     }
   }
-
+  // Idézet rész
   .section-03 {
     height: 18rem;
 
-    h2{
+    h2 {
       width: 80%;
       margin-bottom: 1.6rem;
     }
   }
+
+  // Programok rész
+  .section-04 {
+    background-position: 20%;
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 8rem minmax(min-content, 128rem) 8rem;
+
+    &__wrapper {
+      grid-column: 2/3;
+      align-items: flex-start;
+    }
+
+    .kartya__wrapper {
+      grid-template-columns: repeat(2, minmax(30rem, 27vw));
+      //grid-template-rows: repeat(2, 10rem);
+      grid-gap: 2rem;
+    }
+    .kartya {
+      margin-bottom: 0;
+      grid-template-rows: repeat(2, min-content);
+
+      &__kep {
+        font-size: 5rem;
+      }
+      &__cim {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .btn-01 {
+      text-align: center;
+      width: 28rem;
+    }
+  }
 }
 
+/*********************************
+1280px széles kijelzőhöz
+*********************************/
 @media only screen and (min-width: 1280px) {
   .section-01 {
     &__wrapper {
@@ -82,12 +127,30 @@
   .section-03 {
     height: 22rem;
 
-    h2{
+    h2 {
       margin-bottom: 2rem;
+      
+    max-width: 128rem;
+    }
+  }
+
+  .section-04 {  
+    grid-template-columns: 15vw minmax(min-content, 128rem) 15vw;
+
+    .kartya__wrapper {
+      grid-template-columns: repeat(2, minmax(30rem, 25vw));
+    
+    }
+
+    .btn-01 {
+      width: 32rem;
     }
   }
 }
 
+/*********************************
+1920px széles kijelzőhöz
+*********************************/
 @media only screen and (min-width: 1921px) {
   .nav {
     width: 100%;
@@ -97,8 +160,12 @@
   .section-03 {
     height: 24rem;
 
-    h2{
+    h2 {
       margin-bottom: 2.4rem;
     }
   }
+
+    .section-04 {  
+    grid-template-columns: 20vw minmax(min-content, 128rem) 20vw;
+    }
 }

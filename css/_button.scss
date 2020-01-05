@@ -6,4 +6,11 @@
   color: #fff;
   margin-bottom: 0;
   font-size: calc(12px + (16 - 12) * ((100vw - 200px) / (1920 - 200)));  
+  padding: 1rem 0;
+  width: 17rem;
+  transition: 0.3s; 
+
+  &:hover {
+    background-color: $szin-02;
+  }
 }

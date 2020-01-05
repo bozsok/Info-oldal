@@ -24,16 +24,19 @@ body {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 
 h1 {
   margin: 0 auto;
+  color: #a0b2da;
   font-size: calc(24px + (45 - 24) * ((100vw - 200px) / (1920 - 200)));
 }
 
 p {
   margin: 0 auto;
+  color: #a0b2da;
   font-size: calc( 10px + (18 - 10) * ((100vw - 200px) / (1920 - 200)));
   /*1920px-nél 1.8rem (18px) a betű, 200px-nél 1rem-es*/
   line-height: calc(14px + (24 - 14) * ((100vw - 200px) / (1920 - 200)));
@@ -87,14 +90,18 @@ p {
   background-image: url("../img/hatter.svg");
   background-position: 45%;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-01__wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   display: -ms-grid;
   display: grid;
 }
@@ -103,7 +110,6 @@ p {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
-  color: #a0b2da;
   margin-bottom: 6vh;
 }
 
@@ -112,8 +118,8 @@ p {
 }
 
 .section-01 p {
-  color: #a0b2da;
   margin-bottom: 6vh;
+  width: 85%;
 }
 
 .section-01 .illustration {
@@ -129,7 +135,7 @@ p {
 .section-01 .btn-02 {
   margin: 0 auto;
   padding: 1rem 0;
-  width: 50%;
+  width: 17rem;
 }
 
 .section-01 .btn-01 {
@@ -154,7 +160,7 @@ p {
 
 .section-03 {
   height: 14rem;
-  background-color: #ed7962;
+  background-color: #5a6086;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,18 +192,23 @@ p {
   font-size: calc(12px + (20 - 12) * ((100vw - 200px) / (1920 - 200)));
 }
 
+.section-04 {
+  height: 40rem;
+  background-color: #F6F6F8;
+}
+
+.section-04 h1 {
+  color: #5a6086;
+}
+
 .btn {
   background-color: #fdc100;
   border-radius: 3rem;
   font-weight: 700;
   cursor: pointer;
-}
-
-.btn p {
   color: #fff;
   margin-bottom: 0;
   font-size: calc(12px + (16 - 12) * ((100vw - 200px) / (1920 - 200)));
-  letter-spacing: .07rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -253,10 +264,7 @@ p {
     grid-column: 2/3;
   }
   .section-01__wrapper .btn {
-    width: 16rem;
-  }
-  .section-01__wrapper .btn p {
-    text-align: center;
+    width: 18rem;
   }
   .section-01__wrapper .btn-01,
   .section-01__wrapper .btn-02 {

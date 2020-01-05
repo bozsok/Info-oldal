@@ -40,16 +40,19 @@ body {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 
 h1 {
-  margin: 0 auto;
+  margin: 0 auto;  
+  color: $szin-10;
   font-size: calc(24px + (45 - 24) * ((100vw - 200px) / (1920 - 200)));
 }
 
 p {
   margin: 0 auto;
+  color: $szin-10;
   font-size: calc(
     10px + (18 - 10) * ((100vw - 200px) / (1920 - 200))
   ); /*1920px-nél 1.8rem (18px) a betű, 200px-nél 1rem-es*/

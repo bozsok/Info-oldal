@@ -4,19 +4,16 @@
   background-image: url("../img/hatter.svg");
   background-position: 45%;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     display: grid;
   }
 
   h1 {
     min-width: max-content;
-    color: $szin-10;
     margin-bottom: 6vh;
 
     span {
@@ -25,8 +22,8 @@
   }
 
   p {
-    color: $szin-10;
     margin-bottom: 6vh;
+    width: 85%;
   }
 
   .illustration {
@@ -39,7 +36,7 @@
   .btn-02 {
     margin: 0 auto;
     padding: 1rem 0;
-    width: 50%;
+    width: 17rem;
   }
   .btn-01 {
     margin-bottom: 2rem;

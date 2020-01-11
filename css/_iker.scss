@@ -35,11 +35,11 @@
       ) minmax(6rem, 1fr);
     grid-template-rows: repeat(5, min-content);
   }
-  height: 100vh;
+  height: calc(100vh - 8vh); //nav magasságát kivonom belőle
   align-content: center;
 
   & > *:not(:nth-child(4)) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h1 {
@@ -61,12 +61,12 @@
       text-align: left;
     }
     @media only screen and (min-width: 960px) {
-      grid-column: 3/9;
+      grid-column: 2/9;
       grid-row: 2/3;
       align-self: end;
     }
     @media only screen and (min-width: 1200px) {
-    grid-column: 3/10;
+    grid-column: 2/10;
     }
   }
   p {
@@ -84,21 +84,21 @@
       padding: 0;
     }
     @media only screen and (min-width: 960px) {
-      grid-column: 3/8;
+      grid-column: 2/8;
       grid-row: 3/4;
       align-self: end;
     }
     @media only screen and (min-width: 1200px) {
-      grid-column: 3/9;
+      grid-column: 2/9;
     }
   }
   .illustration {
-    width: 70%;
+    width: 60%;
     grid-column: 2/6;
     grid-row: 2/3;
     justify-self: center;
     @media only screen and (min-width: 600px) {
-      grid-column: 2/10;
+      grid-column: 2/10;      
     }
     @media only screen and (min-width: 768px) {
       grid-column: 5/11;
@@ -106,6 +106,7 @@
       margin-bottom: 0;
       justify-self: end;
       margin-right: 3rem;
+      width: 70%;
     }
     @media only screen and (min-width: 960px) {
       grid-column: 7/15;
@@ -126,11 +127,13 @@
       grid-row: 3/4;
       width: 14rem;
       max-width: 25rem;
+      height: 3.5rem;
     }
     @media only screen and (min-width: 960px) {
-      grid-column: 3/8;
+      grid-column: 2/8;
       grid-row: 4/5;
       width: 16rem;
+      height: auto;
     }
   }
   .btn-01 {
@@ -146,10 +149,11 @@
     margin-top: 1.6rem;
     @media only screen and (min-width: 768px) {
       margin-top: 0;
-      margin-left: 10rem;
+      margin-left: 8rem;
     }
     @media only screen and (min-width: 960px) {
-      margin-left: 16rem;
+      margin-left: 8rem;
+      margin-bottom: 3rem;
     }
   }
 }

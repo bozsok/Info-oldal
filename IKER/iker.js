@@ -4,7 +4,7 @@ for (let i = 0; i < pageUres.length; i++) {
     pageUres[i].style.display = 'none';
 }
 //Megjelenítem a főoldalt
-document.querySelector('.home-page').style.display = 'grid';
+document.querySelector('.iker-page').style.display = 'grid';
 
 //Kigyűjtöm a linkekhez tartozó oldalakat és a linkre kattintva betöltöm azokat
 const pageLink = document.querySelectorAll('.page-link');

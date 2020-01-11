@@ -521,7 +521,7 @@ p {
       grid-template-rows: repeat(4, -webkit-min-content);
       grid-template-rows: repeat(4, min-content);
   grid-gap: 0.7rem;
-  height: 100vh;
+  height: calc(100vh - 8vh);
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -560,7 +560,7 @@ p {
 }
 
 .container__iker > *:not(:nth-child(4)) {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .container__iker h1 {
@@ -602,9 +602,9 @@ p {
 
 @media only screen and (min-width: 960px) {
   .container__iker h1 {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 6;
-    grid-column: 3/9;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2/9;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -616,9 +616,9 @@ p {
 
 @media only screen and (min-width: 1200px) {
   .container__iker h1 {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 7;
-    grid-column: 3/10;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
   }
 }
 
@@ -654,9 +654,9 @@ p {
 
 @media only screen and (min-width: 960px) {
   .container__iker p {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-column: 3/8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -668,14 +668,14 @@ p {
 
 @media only screen and (min-width: 1200px) {
   .container__iker p {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 6;
-    grid-column: 3/9;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2/9;
   }
 }
 
 .container__iker .illustration {
-  width: 70%;
+  width: 60%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;
@@ -706,6 +706,7 @@ p {
     -ms-grid-column-align: end;
         justify-self: end;
     margin-right: 3rem;
+    width: 70%;
   }
 }
 
@@ -749,18 +750,20 @@ p {
     grid-row: 3/4;
     width: 14rem;
     max-width: 25rem;
+    height: 3.5rem;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .container__iker .btn {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-column: 3/8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
     width: 16rem;
+    height: auto;
   }
 }
 
@@ -784,13 +787,14 @@ p {
 @media only screen and (min-width: 768px) {
   .container__iker .btn-02 {
     margin-top: 0;
-    margin-left: 10rem;
+    margin-left: 8rem;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .container__iker .btn-02 {
-    margin-left: 16rem;
+    margin-left: 8rem;
+    margin-bottom: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

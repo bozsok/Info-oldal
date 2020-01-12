@@ -1,12 +1,14 @@
+// INFORMATIKA szó átszínezése
 .nav__ul span {
-  color:$szin-02;
+  color: $szin-01;
   transition: 0.3s;
 
   &:hover {
-    color: $szin-04;
+    color: $szin-02;
   }
 }
 
+// Itt kezdődik az alap osztály, amely meghatározza a kinmézetet
 .container__iker {
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) repeat(4, minmax(min-content, 14rem)) minmax(
@@ -17,10 +19,9 @@
   grid-gap: 0.7rem;
 
   @media only screen and (min-width: 600px) {
-    grid-template-columns: minmax(4rem, 1fr) repeat(
-        8,
-        minmax(min-content, 14rem)
-      ) minmax(4rem, 1fr);
+    grid-template-columns:
+      minmax(4rem, 1fr) repeat(8, minmax(min-content, 14rem))
+      minmax(4rem, 1fr);
   }
   @media only screen and (min-width: 720px) {
     grid-gap: 1rem;
@@ -29,10 +30,9 @@
     grid-template-rows: repeat(3, min-content);
   }
   @media only screen and (min-width: 960px) {
-    grid-template-columns: minmax(6rem, 1fr) repeat(
-        12,
-        minmax(min-content, 10rem)
-      ) minmax(6rem, 1fr);
+    grid-template-columns:
+      minmax(6rem, 1fr) repeat(12, minmax(min-content, 10rem))
+      minmax(6rem, 1fr);
     grid-template-rows: repeat(5, min-content);
   }
   height: calc(100vh - 8vh); //nav magasságát kivonom belőle
@@ -50,12 +50,11 @@
     align-self: center;
 
     span {
-      color: $szin-01;
+      color: $szin-05;
     }
     @media only screen and (min-width: 600px) {
       grid-column: 2/10;
     }
-
     @media only screen and (min-width: 768px) {
       grid-column: 2/6;
       text-align: left;
@@ -66,7 +65,7 @@
       align-self: end;
     }
     @media only screen and (min-width: 1200px) {
-    grid-column: 2/10;
+      grid-column: 2/10;
     }
   }
   p {
@@ -98,7 +97,7 @@
     grid-row: 2/3;
     justify-self: center;
     @media only screen and (min-width: 600px) {
-      grid-column: 2/10;      
+      grid-column: 2/10;
     }
     @media only screen and (min-width: 768px) {
       grid-column: 5/11;
@@ -137,7 +136,11 @@
     }
   }
   .btn-01 {
-    background-color: $szin-01;
+    background-color: $szin-10;
+
+    &:hover {
+      background-color: $szin-13;
+    }
 
     @media only screen and (min-width: 768px) {
       margin-bottom: 3rem;
@@ -145,8 +148,11 @@
     }
   }
   .btn-02 {
-    background-color: $szin-10;
+    background-color: $szin-05;
     margin-top: 1.6rem;
+    &:hover {
+      background-color: $szin-06;
+    }
     @media only screen and (min-width: 768px) {
       margin-top: 0;
       margin-left: 8rem;
@@ -156,4 +162,79 @@
       margin-bottom: 3rem;
     }
   }
+}
+// Itt ér végez az alap osztály, amely meghatározza a kinézetet
+
+// Itt kezdődik a felmérő rész
+.felmero-page,
+.tananyag-page {
+  height: 100%;
+  padding-top: 8vh;
+
+  .felmero__cim {
+    margin-top: 2rem;
+
+    @media only screen and (min-width: 768px) {
+      grid-column: 2/10;
+      justify-self: center;
+      margin-top: 2rem;
+    }
+    @media only screen and (min-width: 960px) {
+      grid-column: 2/14;
+      grid-row: 1/2;
+    }
+  }
+
+  p {
+    @media only screen and (min-width: 768px) {
+      grid-column: 2/10;
+      grid-row: 2/3;
+      text-align: center;
+      padding: 0;
+    }
+    @media only screen and (min-width: 960px) {
+      grid-column: 3/13;
+      grid-row: 2/3;
+      align-self: center;
+    }
+  }
+  span {
+    font-weight: 700;
+    //color: $szin-02
+  }
+  img {
+    width: 50%;
+    @media only screen and (min-width: 768px) {
+      width: 40%;
+    }
+  }
+  .felmero__szamozas {
+    padding: 2rem;
+    grid-row: 3/4;
+    grid-column: 2/6;
+    text-align: center;
+
+    @media only screen and (min-width: 600px) {
+      grid-column: 2/10;
+    }
+    @media only screen and (min-width: 960px) {
+      grid-column: 2/14;
+      text-align: justify;
+      column-count: 2;
+      column-gap: 6rem;
+    }
+
+    .felmero__kerdesek {
+      margin-bottom: 2rem;
+      color: $szin-13;
+      font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+      line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+    }
+    .felmero__idezet {
+    }
+  }
+}
+
+.tananyag-page {
+
 }

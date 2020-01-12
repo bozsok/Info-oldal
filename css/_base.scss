@@ -34,10 +34,11 @@ html {
 body {
   font-family: $font-primary;
   font-weight: 300;
+  position: relative;
 }
 
 .container {
-  position: relative;
+  //position: relative;
 }
 
 a {

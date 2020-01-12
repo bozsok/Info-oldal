@@ -51,6 +51,17 @@ h1 {
   font-size: calc(24px + (45 - 24) * ((100vw - 200px) / (1920 - 200)));
 }
 
+h2 {
+  color: $szin-13;
+  font-size: calc(
+    14px + (30 - 14) * ((100vw - 200px) / (1920 - 200)));
+}
+h3 {
+  color: $szin-10;
+  font-size: calc(
+    13px + (26 - 13) * ((100vw - 200px) / (1920 - 200)));
+}
+
 p {
   color: $szin-10;
   font-size: calc(

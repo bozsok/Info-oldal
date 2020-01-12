@@ -31,6 +31,16 @@ h1 {
   font-size: calc(24px + (45 - 24) * ((100vw - 200px) / (1920 - 200)));
 }
 
+h2 {
+  color: #5a6086;
+  font-size: calc( 14px + (30 - 14) * ((100vw - 200px) / (1920 - 200)));
+}
+
+h3 {
+  color: #a0b2da;
+  font-size: calc( 13px + (26 - 13) * ((100vw - 200px) / (1920 - 200)));
+}
+
 p {
   color: #a0b2da;
   font-size: calc( 12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
@@ -809,14 +819,14 @@ p {
   padding-top: 8vh;
 }
 
-.felmero-page .felmero__cim,
-.tananyag-page .felmero__cim {
+.felmero-page h1,
+.tananyag-page h1 {
   margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .felmero-page .felmero__cim,
-  .tananyag-page .felmero__cim {
+  .felmero-page h1,
+  .tananyag-page h1 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
@@ -827,8 +837,8 @@ p {
 }
 
 @media only screen and (min-width: 960px) {
-  .felmero-page .felmero__cim,
-  .tananyag-page .felmero__cim {
+  .felmero-page h1,
+  .tananyag-page h1 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 12;
     grid-column: 2/14;
@@ -925,5 +935,355 @@ p {
   color: #5a6086;
   font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
   line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+}
+
+.tananyag-page .tananyag__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  border-bottom: 1px solid #e2e8f6;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .tananyag__menu {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .tananyag-page .tananyag__menu {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+}
+
+.tananyag-page .tananyag__oraszam {
+  color: #5a6086;
+  font-size: calc(11px + (18 - 11) * ((100vw - 200px) / (1920 - 200)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.tananyag-page .tananyag__oraszam:hover {
+  color: #d64c49;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .tananyag__oraszam:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tananyag-page .tananyag__oraszam:not(:last-child) {
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.tananyag-page .ora {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 14rem))[4];
+      grid-template-columns: repeat(4, minmax(-webkit-min-content, 14rem));
+      grid-template-columns: repeat(4, minmax(min-content, 14rem));
+  -ms-grid-rows: (min-content)[4];
+      grid-template-rows: repeat(4, -webkit-min-content);
+      grid-template-rows: repeat(4, min-content);
+  grid-gap: 0.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .ora {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+    -ms-grid-columns: (minmax(min-content, 14rem))[8];
+        grid-template-columns: repeat(8, minmax(-webkit-min-content, 14rem));
+        grid-template-columns: repeat(8, minmax(min-content, 14rem));
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .tananyag-page .ora {
+    grid-gap: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tananyag-page .ora {
+    -ms-grid-rows: (min-content)[3];
+        grid-template-rows: repeat(3, -webkit-min-content);
+        grid-template-rows: repeat(3, min-content);
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .tananyag-page .ora {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+    -ms-grid-columns: (minmax(min-content, 10rem))[12];
+        grid-template-columns: repeat(12, minmax(-webkit-min-content, 10rem));
+        grid-template-columns: repeat(12, minmax(min-content, 10rem));
+    -ms-grid-rows: (min-content)[5];
+        grid-template-rows: repeat(5, -webkit-min-content);
+        grid-template-rows: repeat(5, min-content);
+  }
+}
+
+.tananyag-page .ora h2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .ora h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .tananyag-page .ora h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+.tananyag-page .ora h3 {
+  margin-top: 2rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .ora h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .tananyag-page .ora h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+.tananyag-page .ora h3:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.tananyag-page .ora h3:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+.tananyag-page .ora h3:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7/8;
+}
+
+.tananyag-page .ora h3:nth-child(9) {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  grid-row: 9/10;
+}
+
+.tananyag-page .ora h3:nth-child(13) {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 1;
+  grid-row: 13/14;
+}
+
+.tananyag-page .ora h3:nth-child(17) {
+  -ms-grid-row: 17;
+  -ms-grid-row-span: 1;
+  grid-row: 17/18;
+}
+
+.tananyag-page .ora h3:nth-child(19) {
+  -ms-grid-row: 19;
+  -ms-grid-row-span: 1;
+  grid-row: 19/20;
+}
+
+.tananyag-page .ora p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .ora p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .tananyag-page .ora p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    max-width: 96rem;
+  }
+}
+
+.tananyag-page .ora p:nth-child(4) {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.tananyag-page .ora p:nth-child(6) {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+}
+
+.tananyag-page .ora p:nth-child(8) {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  grid-row: 8/9;
+}
+
+.tananyag-page .ora p:nth-child(10) {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10/11;
+}
+
+.tananyag-page .ora p:nth-child(12) {
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 1;
+  grid-row: 12/13;
+  margin-top: 1rem;
+}
+
+.tananyag-page .ora p:nth-child(14) {
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 1;
+  grid-row: 14/15;
+}
+
+.tananyag-page .ora p:nth-child(16) {
+  -ms-grid-row: 16;
+  -ms-grid-row-span: 1;
+  grid-row: 16/17;
+}
+
+.tananyag-page .ora p:nth-child(18) {
+  -ms-grid-row: 18;
+  -ms-grid-row-span: 1;
+  grid-row: 18/19;
+}
+
+.tananyag-page .ora p:nth-child(20) {
+  -ms-grid-row: 20;
+  -ms-grid-row-span: 1;
+  grid-row: 20/21;
+}
+
+.tananyag-page .ora img {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .ora img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .tananyag-page .ora img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+.tananyag-page .ora img:nth-child(11) {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 1;
+  grid-row: 11/12;
+}
+
+.tananyag-page .ora img:nth-child(15) {
+  -ms-grid-row: 15;
+  -ms-grid-row-span: 1;
+  grid-row: 15/16;
+}
+
+.tananyag-page .ora ol {
+  padding: 2rem;
+  color: #a0b2da;
+  font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+@media only screen and (min-width: 600px) {
+  .tananyag-page .ora ol {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .tananyag-page .ora ol {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
 }
 /*# sourceMappingURL=style.css.map */

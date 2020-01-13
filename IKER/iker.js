@@ -10,9 +10,9 @@ for (let i = 0; i < tananyagUres.length; i++) {
 }
 
 //Megjelenítem a főoldalt
-document.querySelector('.iker-page').style.display = 'grid';  ///////ÁTÍRNI, HA VÉGEZTEM .iker-page-re!
+document.querySelector('.tananyag-page').style.display = 'grid';  ///////ÁTÍRNI, HA VÉGEZTEM .iker-page-re!
 //Megjelenítem a TANANYAG oldal 1. óráját
-document.querySelector('.ora_01-page').style.display = 'grid';
+document.querySelector('.ora_04-page').style.display = 'grid';   //////ÁTÍRNI, HA VÉGEZTEM .ora_01-page-re!
 
 //Kigyűjtöm az IKER linkekhez tartozó oldalakat és a linkre kattintva betöltöm azokat
 const pageLink = document.querySelectorAll('.page-link');

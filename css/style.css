@@ -673,14 +673,6 @@ p {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .container__iker p {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 7;
-    grid-column: 2/9;
-  }
-}
-
 .container__iker .illustration {
   width: 60%;
   -ms-grid-column: 2;
@@ -814,19 +806,22 @@ p {
 }
 
 .felmero-page,
-.tananyag-page {
+.tananyag-page,
+.informacio-page {
   height: 100%;
   padding-top: 8vh;
 }
 
 .felmero-page h1,
-.tananyag-page h1 {
+.tananyag-page h1,
+.informacio-page h1 {
   margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
   .felmero-page h1,
-  .tananyag-page h1 {
+  .tananyag-page h1,
+  .informacio-page h1 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
@@ -838,7 +833,8 @@ p {
 
 @media only screen and (min-width: 960px) {
   .felmero-page h1,
-  .tananyag-page h1 {
+  .tananyag-page h1,
+  .informacio-page h1 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 12;
     grid-column: 2/14;
@@ -850,7 +846,8 @@ p {
 
 @media only screen and (min-width: 768px) {
   .felmero-page p,
-  .tananyag-page p {
+  .tananyag-page p,
+  .informacio-page p {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
@@ -864,7 +861,8 @@ p {
 
 @media only screen and (min-width: 960px) {
   .felmero-page p,
-  .tananyag-page p {
+  .tananyag-page p,
+  .informacio-page p {
     -ms-grid-column: 3;
     -ms-grid-column-span: 10;
     grid-column: 3/13;
@@ -878,24 +876,28 @@ p {
 }
 
 .felmero-page span,
-.tananyag-page span {
+.tananyag-page span,
+.informacio-page span {
   font-weight: 700;
 }
 
 .felmero-page img,
-.tananyag-page img {
+.tananyag-page img,
+.informacio-page img {
   width: 50%;
 }
 
 @media only screen and (min-width: 768px) {
   .felmero-page img,
-  .tananyag-page img {
+  .tananyag-page img,
+  .informacio-page img {
     width: 40%;
   }
 }
 
 .felmero-page .felmero__szamozas,
-.tananyag-page .felmero__szamozas {
+.tananyag-page .felmero__szamozas,
+.informacio-page .felmero__szamozas {
   padding: 2rem;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -908,7 +910,8 @@ p {
 
 @media only screen and (min-width: 600px) {
   .felmero-page .felmero__szamozas,
-  .tananyag-page .felmero__szamozas {
+  .tananyag-page .felmero__szamozas,
+  .informacio-page .felmero__szamozas {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
@@ -917,7 +920,8 @@ p {
 
 @media only screen and (min-width: 960px) {
   .felmero-page .felmero__szamozas,
-  .tananyag-page .felmero__szamozas {
+  .tananyag-page .felmero__szamozas,
+  .informacio-page .felmero__szamozas {
     -ms-grid-column: 2;
     -ms-grid-column-span: 12;
     grid-column: 2/14;
@@ -930,7 +934,8 @@ p {
 }
 
 .felmero-page .felmero__szamozas .felmero__kerdesek,
-.tananyag-page .felmero__szamozas .felmero__kerdesek {
+.tananyag-page .felmero__szamozas .felmero__kerdesek,
+.informacio-page .felmero__szamozas .felmero__kerdesek {
   margin-bottom: 2rem;
   color: #5a6086;
   font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
@@ -1086,6 +1091,7 @@ p {
   -ms-grid-column-span: 4;
   grid-column: 1/5;
   text-align: center;
+  color: #5a6086;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1263,7 +1269,7 @@ p {
 
 .tananyag-page .ora ol {
   padding: 2rem;
-  color: #a0b2da;
+  color: #5a6086;
   font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
   line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
   -ms-grid-column: 1;
@@ -1284,6 +1290,240 @@ p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1/13;
+    max-width: 90rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
+}
+
+.tananyag-page .ora ol li {
+  color: #a0b2da;
+}
+
+.informacio-page > * {
+  margin-bottom: 2rem;
+}
+
+.informacio-page h2 {
+  margin-top: 3rem;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+@media only screen and (min-width: 600px) {
+  .informacio-page h2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .informacio-page h2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+}
+
+.informacio-page h2:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.informacio-page h2:nth-child(7) {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+}
+
+.informacio-page h2:nth-child(9) {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  grid-row: 8/9;
+}
+
+.informacio-page h2:nth-child(11) {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10/11;
+}
+
+.informacio-page h2:nth-child(13) {
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 1;
+  grid-row: 12/13;
+}
+
+.informacio-page h2:nth-child(15) {
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 1;
+  grid-row: 14/15;
+}
+
+.informacio-page h2:nth-child(17) {
+  -ms-grid-row: 16;
+  -ms-grid-row-span: 1;
+  grid-row: 16/17;
+}
+
+.informacio-page h3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .informacio-page h3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .informacio-page h3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+}
+
+.informacio-page h3:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.informacio-page p:nth-child(4) {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.informacio-page p:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+.informacio-page ul {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7/8;
+  padding: 0 2rem;
+  list-style-type: disc;
+  color: #a0b2da;
+  font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .informacio-page ul {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .informacio-page ul {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 10;
+    grid-column: 3/13;
+  }
+}
+
+.informacio-page ul:nth-child(10) {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  grid-row: 9/10;
+}
+
+.informacio-page ul:nth-child(12) {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 1;
+  grid-row: 11/12;
+}
+
+.informacio-page ul:nth-child(14) {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 1;
+  grid-row: 13/14;
+}
+
+.informacio-page ul:nth-child(16) {
+  -ms-grid-row: 15;
+  -ms-grid-row-span: 1;
+  grid-row: 15/16;
+}
+
+@media only screen and (min-width: 768px) {
+  .informacio-page ul li {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 6;
+    grid-column: 3/9;
+    max-width: 50rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .informacio-page ul li {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+    max-width: 60rem;
+  }
+}
+
+.informacio-page ol {
+  color: #a0b2da;
+  font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .informacio-page ol {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .informacio-page ol {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+}
+
+.informacio-page ol:nth-child(18) {
+  -ms-grid-row: 17;
+  -ms-grid-row-span: 1;
+  grid-row: 17/18;
 }
 /*# sourceMappingURL=style.css.map */

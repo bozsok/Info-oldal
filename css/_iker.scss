@@ -88,7 +88,7 @@
       align-self: end;
     }
     @media only screen and (min-width: 1200px) {
-      grid-column: 2/9;
+      //grid-column: 2/9;
     }
   }
   .illustration {
@@ -167,7 +167,8 @@
 
 // Itt kezdődik a felmérő rész
 .felmero-page,
-.tananyag-page {
+.tananyag-page,
+.informacio-page {
   height: 100%;
   padding-top: 8vh;
 
@@ -319,6 +320,7 @@
       margin-top: 2rem;
       grid-column: 1/5; 
       text-align: center;
+      color: $szin-13;
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
@@ -407,7 +409,7 @@
     }
     ol {      
       padding: 2rem;
-      color: $szin-10;
+      color: $szin-13;
       font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
       line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
       
@@ -417,7 +419,146 @@
       }
       @media only screen and (min-width: 960px) {
         grid-column: 1/13;
+        max-width: 90rem;
+        justify-self: center;
       }
+
+      li {
+        color: $szin-10;
+      }
+    }
+  }
+}
+// Itt végződik a tananyag rész
+
+// Itt kezdődik az infomáció rész
+.informacio-page {
+  & > * {
+    margin-bottom: 2rem; 
+  }
+  
+  h2{
+    margin-top: 3rem;
+    grid-column: 2/6;
+    text-align: center;
+    grid-row: 2/3;
+    @media only screen and (min-width: 600px) {
+    grid-column: 2/10;
+    }
+    @media only screen and (min-width: 960px) {
+      grid-column: 2/14;
+    }
+    &:nth-child(2){
+      grid-row: 2/3;
+    }
+    &:nth-child(7){
+      grid-row: 6/7;
+    }
+    &:nth-child(9){
+      grid-row: 8/9;
+    }
+    &:nth-child(11){
+      grid-row: 10/11;
+    }
+    &:nth-child(13){
+      grid-row: 12/13;
+    }
+    &:nth-child(15){
+      grid-row: 14/15;
+    }
+    &:nth-child(17){
+      grid-row: 16/17;
+    }
+  }
+
+  h3{
+    grid-column: 2/6;    
+    text-align: center;
+    
+    @media only screen and (min-width: 600px) {
+      grid-column: 2/10;
+    }
+    @media only screen and (min-width: 960px) {
+      grid-column: 2/14;
+    }
+    &:nth-child(3){
+      grid-row: 3/4;
+    }
+  }
+
+  p{   
+    
+    &:nth-child(4){
+      grid-row:4/5;
+    }
+    &:nth-child(5){
+      grid-row:5/6;
+    }
+  }
+
+  ul{
+    grid-column: 2/6;
+    grid-row: 7/8;
+    padding: 0 2rem;
+    list-style-type: disc;
+    color: $szin-10;
+    font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+    line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+    
+    display: grid;
+    justify-content: center;
+
+    @media only screen and (min-width: 600px) {
+      grid-column: 2/10;
+    }
+    @media only screen and (min-width: 960px) {
+      grid-column: 3/13;      
+    }
+
+    &:nth-child(10) {
+      grid-row: 9/10;
+    }
+    &:nth-child(12) {
+      grid-row: 11/12;
+    }
+    &:nth-child(14) {
+      grid-row: 13/14;
+    }
+    &:nth-child(16) {
+      grid-row: 15/16;
+    }
+
+    li {      
+      
+      @media only screen and (min-width: 768px) {
+        grid-column: 3/9;
+        max-width: 50rem;
+      }
+      @media only screen and (min-width: 960px) {
+        grid-column: 2/10;
+        max-width: 60rem;
+      }
+    }
+  }
+
+  ol {
+    color: $szin-10;
+    font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+    line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));    
+    grid-column: 2/6;
+
+    display: grid;
+    justify-content: center;
+
+    @media only screen and (min-width: 600px) {
+    grid-column: 2/9;
+    }
+    @media only screen and (min-width: 960px) {
+      grid-column: 2/14;
+    }
+
+    &:nth-child(18) {
+      grid-row: 17/18;
     }
   }
 }

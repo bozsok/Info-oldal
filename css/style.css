@@ -518,6 +518,11 @@ p {
   color: #f18a00;
 }
 
+a {
+  font-weight: 700;
+  color: #e2e8f6;
+}
+
 .container__iker {
   display: -ms-grid;
   display: grid;
@@ -807,21 +812,24 @@ p {
 
 .felmero-page,
 .tananyag-page,
-.informacio-page {
+.informacio-page,
+.feladatok-page {
   height: 100%;
   padding-top: 8vh;
 }
 
 .felmero-page h1,
 .tananyag-page h1,
-.informacio-page h1 {
+.informacio-page h1,
+.feladatok-page h1 {
   margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
   .felmero-page h1,
   .tananyag-page h1,
-  .informacio-page h1 {
+  .informacio-page h1,
+  .feladatok-page h1 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
@@ -834,7 +842,8 @@ p {
 @media only screen and (min-width: 960px) {
   .felmero-page h1,
   .tananyag-page h1,
-  .informacio-page h1 {
+  .informacio-page h1,
+  .feladatok-page h1 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 12;
     grid-column: 2/14;
@@ -847,7 +856,8 @@ p {
 @media only screen and (min-width: 768px) {
   .felmero-page p,
   .tananyag-page p,
-  .informacio-page p {
+  .informacio-page p,
+  .feladatok-page p {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
@@ -862,7 +872,8 @@ p {
 @media only screen and (min-width: 960px) {
   .felmero-page p,
   .tananyag-page p,
-  .informacio-page p {
+  .informacio-page p,
+  .feladatok-page p {
     -ms-grid-column: 3;
     -ms-grid-column-span: 10;
     grid-column: 3/13;
@@ -877,27 +888,31 @@ p {
 
 .felmero-page span,
 .tananyag-page span,
-.informacio-page span {
+.informacio-page span,
+.feladatok-page span {
   font-weight: 700;
 }
 
 .felmero-page img,
 .tananyag-page img,
-.informacio-page img {
+.informacio-page img,
+.feladatok-page img {
   width: 50%;
 }
 
 @media only screen and (min-width: 768px) {
   .felmero-page img,
   .tananyag-page img,
-  .informacio-page img {
+  .informacio-page img,
+  .feladatok-page img {
     width: 40%;
   }
 }
 
 .felmero-page .felmero__szamozas,
 .tananyag-page .felmero__szamozas,
-.informacio-page .felmero__szamozas {
+.informacio-page .felmero__szamozas,
+.feladatok-page .felmero__szamozas {
   padding: 2rem;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -911,7 +926,8 @@ p {
 @media only screen and (min-width: 600px) {
   .felmero-page .felmero__szamozas,
   .tananyag-page .felmero__szamozas,
-  .informacio-page .felmero__szamozas {
+  .informacio-page .felmero__szamozas,
+  .feladatok-page .felmero__szamozas {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
@@ -921,7 +937,8 @@ p {
 @media only screen and (min-width: 960px) {
   .felmero-page .felmero__szamozas,
   .tananyag-page .felmero__szamozas,
-  .informacio-page .felmero__szamozas {
+  .informacio-page .felmero__szamozas,
+  .feladatok-page .felmero__szamozas {
     -ms-grid-column: 2;
     -ms-grid-column-span: 12;
     grid-column: 2/14;
@@ -935,7 +952,8 @@ p {
 
 .felmero-page .felmero__szamozas .felmero__kerdesek,
 .tananyag-page .felmero__szamozas .felmero__kerdesek,
-.informacio-page .felmero__szamozas .felmero__kerdesek {
+.informacio-page .felmero__szamozas .felmero__kerdesek,
+.feladatok-page .felmero__szamozas .felmero__kerdesek {
   margin-bottom: 2rem;
   color: #5a6086;
   font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
@@ -943,9 +961,6 @@ p {
 }
 
 .tananyag-page .tananyag__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;
@@ -958,6 +973,9 @@ p {
   text-decoration: none;
   list-style: none;
   border-bottom: 1px solid #e2e8f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1825,5 +1843,361 @@ p {
   -ms-grid-row: 17;
   -ms-grid-row-span: 1;
   grid-row: 17/18;
+}
+
+.feladatok-page .tananyag__menu {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  border-bottom: 1px solid #e2e8f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .tananyag__menu {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .tananyag__menu {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+}
+
+.feladatok-page .tananyag__oraszam {
+  color: #5a6086;
+  font-size: calc(11px + (18 - 11) * ((100vw - 200px) / (1920 - 200)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.feladatok-page .tananyag__oraszam:hover {
+  color: #d64c49;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .tananyag__oraszam:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feladatok-page .tananyag__oraszam:not(:last-child) {
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.feladatok-page .ora {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 14rem))[4];
+      grid-template-columns: repeat(4, minmax(-webkit-min-content, 14rem));
+      grid-template-columns: repeat(4, minmax(min-content, 14rem));
+  grid-gap: 0.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .ora {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+    -ms-grid-columns: (minmax(min-content, 14rem))[8];
+        grid-template-columns: repeat(8, minmax(-webkit-min-content, 14rem));
+        grid-template-columns: repeat(8, minmax(min-content, 14rem));
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .feladatok-page .ora {
+    grid-gap: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .ora {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+    -ms-grid-columns: (minmax(min-content, 10rem))[12];
+        grid-template-columns: repeat(12, minmax(-webkit-min-content, 10rem));
+        grid-template-columns: repeat(12, minmax(min-content, 10rem));
+  }
+}
+
+.feladatok-page .ora h2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .ora h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .ora h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+.feladatok-page .ora h3 {
+  margin-top: 2rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  text-align: center;
+  color: #5a6086;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .ora h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .ora h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+.feladatok-page .ora p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .ora p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .ora p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    max-width: 96rem;
+  }
+}
+
+.feladatok-page .ora img {
+  width: 80%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .ora img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .ora img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+.feladatok-page .ora ol {
+  padding: 2rem;
+  color: #5a6086;
+  font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .ora ol {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .ora ol {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+    max-width: 90rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+.feladatok-page .ora ol li {
+  color: #a0b2da;
+}
+
+.feladatok-page .ora ul {
+  margin-bottom: 0;
+}
+
+.feladatok-page .accordion {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  margin-bottom: 1rem;
+  background-color: #e2e8f6;
+  color: #444;
+  cursor: pointer;
+  padding: 1.6rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .accordion {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .accordion {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+.feladatok-page .accordion:active, .feladatok-page .accordion:hover {
+  background-color: #c0ceeb;
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .accordion p {
+    max-width: 100%;
+  }
+}
+
+.feladatok-page .panel {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  margin-bottom: 2rem;
+  display: none;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .panel {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .panel {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .panel p {
+    max-width: 100%;
+  }
+}
+
+.feladatok-page .panel .btn-02 {
+  margin: 0 auto;
+}
+
+.feladatok-page .tartalom {
+  -webkit-column-count: 1;
+          column-count: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .feladatok-page .tartalom {
+    -webkit-column-count: 2;
+            column-count: 2;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feladatok-page .tartalom {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feladatok-page .tartalom {
+    -webkit-column-count: 5;
+            column-count: 5;
+  }
+}
+
+.feladatok-page .tartalom span {
+  font-weight: 700;
+}
+
+.feladatok-page .nap_02-page h3 {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

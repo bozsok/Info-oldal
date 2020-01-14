@@ -1071,6 +1071,7 @@ a {
   grid-column: 1/5;
   margin-bottom: 2rem;
   text-align: center;
+  color: #f18a00;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1106,11 +1107,17 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .tananyag-page .ora h3 {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .tananyag-page .ora h3 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
   }
 }
 
@@ -1128,19 +1135,22 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .tananyag-page .ora p {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .tananyag-page .ora p {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    max-width: 96rem;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
   }
 }
 
 .tananyag-page .ora img {
-  width: 80%;
+  width: 100%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
@@ -1158,14 +1168,16 @@ a {
 
 @media only screen and (min-width: 960px) {
   .tananyag-page .ora img {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 
 .tananyag-page .ora ol {
-  padding: 2rem;
+  padding: 2rem 0;
   color: #5a6086;
   font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
   line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
@@ -1184,17 +1196,15 @@ a {
 
 @media only screen and (min-width: 960px) {
   .tananyag-page .ora ol {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
-    max-width: 90rem;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
   }
 }
 
 .tananyag-page .ora ol li {
   color: #a0b2da;
+  margin-left: 2rem;
 }
 
 .ora_01-page h3:nth-child(3) {
@@ -1641,11 +1651,18 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .informacio-page h2 {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .informacio-page h2 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 12;
-    grid-column: 2/14;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 10;
+    grid-column: 3/13;
+    text-align: left;
   }
 }
 
@@ -1706,11 +1723,18 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .informacio-page h3 {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .informacio-page h3 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 12;
-    grid-column: 2/14;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 10;
+    grid-column: 3/13;
+    text-align: left;
   }
 }
 
@@ -1718,6 +1742,18 @@ a {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+}
+
+@media only screen and (min-width: 768px) {
+  .informacio-page p {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .informacio-page p {
+    text-align: left;
+  }
 }
 
 .informacio-page p:nth-child(4) {
@@ -1756,6 +1792,14 @@ a {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .informacio-page ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -1816,6 +1860,7 @@ a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;
+  margin-left: 2rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -1831,11 +1876,19 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .informacio-page ol {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .informacio-page ol {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 12;
-    grid-column: 2/14;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 10;
+    grid-column: 3/13;
   }
 }
 
@@ -1992,6 +2045,12 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .feladatok-page .ora h3 {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .feladatok-page .ora h3 {
     -ms-grid-column: 1;
@@ -2014,14 +2073,17 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .feladatok-page .ora p {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .feladatok-page .ora p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1/13;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    max-width: 96rem;
   }
 }
 
@@ -2051,31 +2113,15 @@ a {
 }
 
 .feladatok-page .ora ol {
-  padding: 2rem;
   color: #5a6086;
   font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
   line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1/5;
-}
-
-@media only screen and (min-width: 600px) {
-  .feladatok-page .ora ol {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 8;
-    grid-column: 1/9;
-  }
+  margin-left: 2.5rem;
 }
 
 @media only screen and (min-width: 960px) {
   .feladatok-page .ora ol {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
     max-width: 90rem;
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
 }
 
@@ -2093,14 +2139,12 @@ a {
   grid-column: 1/5;
   margin-bottom: 1rem;
   background-color: #e2e8f6;
-  color: #444;
   cursor: pointer;
   padding: 1.6rem;
-  width: 100%;
   border: none;
   outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 600px) {
@@ -2113,14 +2157,26 @@ a {
 
 @media only screen and (min-width: 960px) {
   .feladatok-page .accordion {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
   }
 }
 
 .feladatok-page .accordion:active, .feladatok-page .accordion:hover {
   background-color: #c0ceeb;
+}
+
+.feladatok-page .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.feladatok-page .accordion p {
+  display: inline-block;
 }
 
 @media only screen and (min-width: 960px) {
@@ -2129,12 +2185,14 @@ a {
   }
 }
 
+.feladatok-page .active:after {
+  content: "\2212";
+}
+
 .feladatok-page .panel {
-  width: 100%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
-  margin-bottom: 2rem;
   display: none;
   overflow: hidden;
 }
@@ -2149,11 +2207,14 @@ a {
 
 @media only screen and (min-width: 960px) {
   .feladatok-page .panel {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/13;
-    padding: 0 4rem;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2/12;
   }
+}
+
+.feladatok-page .panel p {
+  margin: 2rem 0;
 }
 
 @media only screen and (min-width: 960px) {
@@ -2166,16 +2227,22 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .feladatok-page .panel .btn-02 {
+    margin: 0;
+  }
+}
+
 .feladatok-page .tartalom {
-  -webkit-column-count: 1;
-          column-count: 1;
+  -webkit-column-count: 2;
+          column-count: 2;
+  text-align: left;
 }
 
 @media only screen and (min-width: 600px) {
   .feladatok-page .tartalom {
-    -webkit-column-count: 2;
-            column-count: 2;
-    text-align: left;
+    -webkit-column-count: 3;
+            column-count: 3;
   }
 }
 

@@ -291,7 +291,6 @@ a {
 
     display: grid;
     grid-template-columns: repeat(4,minmax(min-content, 14rem));
-    //grid-template-rows: repeat(4, min-content);
     grid-gap: 0.4rem;
 
     @media only screen and (min-width: 600px) {
@@ -301,12 +300,10 @@ a {
       grid-gap: 0.6rem;
     }
     @media only screen and (min-width: 768px) {
-      //grid-template-rows: repeat(3, min-content);
     }
     @media only screen and (min-width: 960px) {
       grid-column: 2/14;
       grid-template-columns: repeat(12, minmax(min-content, 10rem));
-      //grid-template-rows: repeat(5, min-content);
     }
 
     h2 {
@@ -316,9 +313,13 @@ a {
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
+      @media only screen and (min-width: 768px) {
+      //text-align: left;
+      }
       @media only screen and (min-width: 960px) {
         grid-column: 1/13;
       }
+      color: $szin-02;
     }
 
     h3 {
@@ -329,8 +330,11 @@ a {
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
+      @media only screen and (min-width: 768px) {
+        text-align: left;
+      }
       @media only screen and (min-width: 960px) {
-        grid-column: 1/13;
+        grid-column: 2/12;
       }      
     }
 
@@ -339,25 +343,28 @@ a {
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
+      @media only screen and (min-width: 768px) {
+        text-align: left;
+        //margin-left: 2rem;
+      }
       @media only screen and (min-width: 960px) {
-        grid-column: 1/13;
-        justify-self: center;
-        max-width: 96rem;
+        grid-column: 2/12;
       }      
     }
     img {
-      width: 80%;
+      width: 100%;
       grid-column: 1/5;
       justify-self: center;
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
       @media only screen and (min-width: 960px) {
-        grid-column: 1/13;
+        grid-column: 2/12;        
+        justify-self: start;
       }      
     }
     ol {      
-      padding: 2rem;
+      padding: 2rem 0;
       color: $szin-13;
       font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
       line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
@@ -367,13 +374,12 @@ a {
       grid-column: 1/9;
       }
       @media only screen and (min-width: 960px) {
-        grid-column: 1/13;
-        max-width: 90rem;
-        justify-self: center;
+        grid-column: 2/12;
       }
 
       li {
         color: $szin-10;
+        margin-left: 2rem;
       }
     }
   }
@@ -684,8 +690,12 @@ a {
     @media only screen and (min-width: 600px) {
     grid-column: 2/10;
     }
+    @media only screen and (min-width: 768px) {
+    text-align: left;
+    }
     @media only screen and (min-width: 960px) {
-      grid-column: 2/14;
+      grid-column: 3/13;
+      text-align: left;
     }
     &:nth-child(2){
       grid-row: 2/3;
@@ -717,15 +727,25 @@ a {
     @media only screen and (min-width: 600px) {
       grid-column: 2/10;
     }
+    @media only screen and (min-width: 768px) {
+    text-align: left;
+    }
     @media only screen and (min-width: 960px) {
-      grid-column: 2/14;
+      grid-column: 3/13;
+      text-align: left;
     }
     &:nth-child(3){
       grid-row: 3/4;
     }
   }
 
-  p{   
+  p{
+    @media only screen and (min-width: 768px) {
+    text-align: left;
+    }
+    @media only screen and (min-width: 960px) {
+    text-align: left;
+    }
     
     &:nth-child(4){
       grid-row:4/5;
@@ -749,6 +769,9 @@ a {
 
     @media only screen and (min-width: 600px) {
       grid-column: 2/10;
+    }
+    @media only screen and (min-width: 768px) {
+    justify-content: start
     }
     @media only screen and (min-width: 960px) {
       grid-column: 3/13;      
@@ -785,6 +808,7 @@ a {
     font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
     line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));    
     grid-column: 2/6;
+    margin-left: 2rem;
 
     display: grid;
     justify-content: center;
@@ -792,8 +816,11 @@ a {
     @media only screen and (min-width: 600px) {
     grid-column: 2/9;
     }
+    @media only screen and (min-width: 768px) {
+    justify-content: start
+    }
     @media only screen and (min-width: 960px) {
-      grid-column: 2/14;
+      grid-column: 3/13;
     }
 
     &:nth-child(18) {
@@ -889,6 +916,9 @@ a {
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
+      @media only screen and (min-width: 768px) {
+      text-align: left;
+      }
       @media only screen and (min-width: 960px) {
         grid-column: 1/13;
       }      
@@ -899,10 +929,11 @@ a {
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
+      @media only screen and (min-width: 768px) {
+      text-align: left;
+      }
       @media only screen and (min-width: 960px) {
         grid-column: 1/13;
-        justify-self: center;
-        max-width: 96rem;
       }      
     }
     img {
@@ -916,20 +947,14 @@ a {
         grid-column: 1/13;
       }      
     }
-    ol {      
-      padding: 2rem;
+    ol {
       color: $szin-13;
       font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
       line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
-      
-      grid-column: 1/5;
-      @media only screen and (min-width: 600px) {
-      grid-column: 1/9;
-      }
+      margin-left: 2.5rem;
+
       @media only screen and (min-width: 960px) {
-        grid-column: 1/13;
         max-width: 90rem;
-        justify-self: center;
       }
 
       li {
@@ -948,57 +973,72 @@ a {
     grid-column: 1/9;
     }
     @media only screen and (min-width: 960px) {
-      grid-column: 1/13;
+      grid-column: 2/12;
     }
     background-color: $szin-08;
-    color: #444;
     cursor: pointer;
     padding: 1.6rem;
-    width: 100%;
     border: none;
     outline: none;
-    transition: 0.4s;
+    transition: 0.5s;
 
     &:active,
     &:hover {
       background-color: $szin-09;
     }
 
+    &:after {
+      content: '\002B';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
     p{
+      display: inline-block;
       @media only screen and (min-width: 960px) {
         max-width: 100%;
       }
     }    
-  }
+  }  
+  .active:after {
+    content: "\2212";
+    }
+
   .panel {
-    width: 100%;
-    grid-column: 1/5;
-    margin-bottom: 2rem;    
+    grid-column: 1/5;   
     @media only screen and (min-width: 600px) {
     grid-column: 1/9;
     }
     @media only screen and (min-width: 960px) {
-      grid-column: 1/13;      
-      padding: 0 4rem;
+      grid-column: 2/12;
     }    
     display: none;
     overflow: hidden;
 
     p{
+      margin: 2rem 0;
       @media only screen and (min-width: 960px) {
         max-width: 100%;
       }
     }
     .btn-02 {
       margin: 0 auto;
+      @media only screen and (min-width: 768px) {
+        margin: 0;
+      }
+      @media only screen and (min-width: 960px) {
+      }
     }
   }
+  
   .tartalom {
-    column-count: 1;
+    column-count: 2;
+    text-align: left;
 
     @media only screen and (min-width: 600px) {
-        column-count: 2;
-        text-align: left;
+        column-count: 3;
     }
     @media only screen and (min-width: 768px) {
         column-count: 4;

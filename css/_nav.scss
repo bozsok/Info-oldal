@@ -2,17 +2,44 @@ $nav_magassag: 8vh;
 
 .nav {
   position: absolute;
-  width: 90%;
-  left: 50%;
-  transform: translate(-50%);
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) repeat(4, minmax(min-content, 14rem)) minmax(2rem, 1fr);
+  grid-gap: 0.7rem;
+
+  @media only screen and (min-width: 600px) {
+    grid-template-columns: minmax(4rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(4rem, 1fr);
+  }
+  @media only screen and (min-width: 720px) {
+    grid-gap: 1rem;
+  }
+  @media only screen and (min-width: 768px) {
+    
+  }
+  @media only screen and (min-width: 960px) {
+    grid-template-columns: minmax(6rem, 1fr) repeat(12, minmax(min-content, 10rem)) minmax(6rem, 1fr);    
+  }
 
   &__ul {
     height: $nav_magassag;
+    grid-column: 2/6;
     display: flex;
 
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     list-style-type: none;
+
+    @media only screen and (min-width: 600px) {
+      grid-column: 2/10;
+    }
+    @media only screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-width: 960px) {
+      grid-column: 2/14;
+    }
 
     li {
       cursor: pointer;

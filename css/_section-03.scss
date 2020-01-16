@@ -1,25 +1,26 @@
 .section-03 {
-    height: 14rem;    
-    background-color: $szin-13;
+  height: 14rem;
+  background-color: $szin-13;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Amatic SC", cursive;
+
+  h2 {
+    align-self: center;
+    width: 80%;
+    margin-bottom: 1.2rem;
     color: #fff;
-    font-family: 'Amatic SC',cursive;
-    
+    font-size: calc(14px + (40 - 14) * ((100vw - 200px) / (1920 - 200)));
+  }
 
-    h2 {
-        align-self: center;
-        width: 80%;
-        margin-bottom: 1.2rem;
-        font-size: calc(14px + (40 - 14) * ((100vw - 200px) / (1920 - 200)));
-    }
+  p {
+    margin: 0;
+    margin-right: 20vw;
+    align-self: flex-end;
 
-    p{
-        margin: 0;
-        margin-right: 20vw;
-        align-self: flex-end;
-        font-size: calc(12px + (20 - 12) * ((100vw - 200px) / (1920 - 200)));
-    }
+    color: #fff;
+    font-size: calc(12px + (20 - 12) * ((100vw - 200px) / (1920 - 200)));
+  }
 }

@@ -14,17 +14,12 @@ a {
 // Itt kezdődik az alap osztály, amely meghatározza a kinmézetet
 .container__iker {
   display: grid;
-  grid-template-columns: minmax(2rem, 1fr) repeat(4, minmax(min-content, 14rem)) minmax(
-      2rem,
-      1fr
-    );
+  grid-template-columns: minmax(2rem, 1fr) repeat(4, minmax(min-content, 14rem)) minmax(2rem, 1fr);
   grid-template-rows: repeat(4, min-content);
   grid-gap: 0.7rem;
 
   @media only screen and (min-width: 600px) {
-    grid-template-columns:
-      minmax(4rem, 1fr) repeat(8, minmax(min-content, 14rem))
-      minmax(4rem, 1fr);
+    grid-template-columns: minmax(4rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(4rem, 1fr);
   }
   @media only screen and (min-width: 720px) {
     grid-gap: 1rem;
@@ -33,12 +28,11 @@ a {
     grid-template-rows: repeat(3, min-content);
   }
   @media only screen and (min-width: 960px) {
-    grid-template-columns:
-      minmax(6rem, 1fr) repeat(12, minmax(min-content, 10rem))
-      minmax(6rem, 1fr);
+    grid-template-columns: minmax(6rem, 1fr) repeat(12, minmax(min-content, 10rem)) minmax(6rem, 1fr);
     grid-template-rows: repeat(5, min-content);
   }
-  height: calc(100vh - 8vh); //nav magasságát kivonom belőle
+  min-height: 65rem;
+  height: 100vh;
   align-content: center;
 
   & > *:not(:nth-child(4)) {
@@ -231,7 +225,7 @@ a {
 
     .felmero__kerdesek {
       margin-bottom: 2rem;
-      color: $szin-13;
+      color: $szin-16;
       font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
       line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
     }
@@ -244,7 +238,7 @@ a {
 // Itt kezdődik a tananyag rész
 .tananyag-page {
   
-  .tananyag__menu {
+  ul {
     grid-column: 2/6;
     grid-row: 2/3;
     justify-content: space-between;
@@ -261,30 +255,31 @@ a {
     }
 
     display: flex;
-  }
-  .tananyag__oraszam {
-    color: $szin-13;
-    font-size: calc(11px + (18 - 11) * ((100vw - 200px) / (1920 - 200)));
-    line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
-    cursor: pointer;
-    margin-bottom: 1rem;    
 
-    &:hover {
-      color: $szin-04;
-    }
-    @media only screen and (min-width: 600px) {
-      &:not(:last-child) {
-        margin-right: 2rem;
-      } 
-    }
-    @media only screen and (min-width: 768px) {
-      &:not(:last-child) {
-        margin-right: 3rem;
-        
-    margin-bottom: 2rem;
-      } 
+    li{
+      cursor: pointer;
+      margin-bottom: 1rem;
+      text-align: center;
+      transition: 0.3s;    
+
+      &:hover {
+        color: $szin-04;
+        font-weight: 700;
+      }
+      @media only screen and (min-width: 600px) {
+        &:not(:last-child) {
+          margin-right: 2rem;
+        } 
+      }
+      @media only screen and (min-width: 768px) {
+        &:not(:last-child) {
+          margin-right: 3rem;        
+          margin-bottom: 2rem;
+        } 
+      }
     }
   }
+  
   .ora {
     grid-column: 2/6;
     grid-row: 3/4;
@@ -326,7 +321,6 @@ a {
       margin-top: 2rem;
       grid-column: 1/5; 
       text-align: center;
-      color: $szin-13;
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
@@ -365,9 +359,6 @@ a {
     }
     ol {      
       padding: 2rem 0;
-      color: $szin-13;
-      font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
-      line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
       
       grid-column: 1/5;
       @media only screen and (min-width: 600px) {
@@ -378,7 +369,6 @@ a {
       }
 
       li {
-        color: $szin-10;
         margin-left: 2rem;
       }
     }
@@ -760,9 +750,6 @@ a {
     grid-row: 7/8;
     padding: 0 2rem;
     list-style-type: disc;
-    color: $szin-10;
-    font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
-    line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
     
     display: grid;
     justify-content: center;
@@ -803,10 +790,7 @@ a {
     }
   }
 
-  ol {
-    color: $szin-10;
-    font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
-    line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));    
+  ol {  
     grid-column: 2/6;
     margin-left: 2rem;
 
@@ -833,7 +817,7 @@ a {
 // Itt kezdődik az feladatok rész
 .feladatok-page {
 
-  .tananyag__menu {
+  ul {
     grid-column: 2/6;
     grid-row: 2/3;
     justify-content: center;
@@ -850,31 +834,29 @@ a {
     }
 
     display: flex;
-  }
-  .tananyag__oraszam {
-    color: $szin-13;
-    font-size: calc(11px + (18 - 11) * ((100vw - 200px) / (1920 - 200)));
-    line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
-    cursor: pointer;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
 
-    &:hover {
-      color: $szin-04;
-    }
-    @media only screen and (min-width: 600px) {
-      &:not(:last-child) {
-        margin-right: 2rem;
-      } 
-    }
-    @media only screen and (min-width: 768px) {
-      &:not(:last-child) {
-        margin-right: 3rem;
-        
-    margin-bottom: 2rem;
-      } 
+    li {
+      cursor: pointer;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+
+      &:hover {
+        color: $szin-04;
+      }
+      @media only screen and (min-width: 600px) {
+        &:not(:last-child) {
+          margin-right: 2rem;
+        } 
+      }
+      @media only screen and (min-width: 768px) {
+        &:not(:last-child) {
+        margin-right: 3rem;        
+        margin-bottom: 2rem;
+        } 
+      }
     }
   }
+  
   .ora {
     grid-column: 2/6;
     grid-row: 3/4;
@@ -912,7 +894,6 @@ a {
       margin-top: 2rem;
       grid-column: 1/5; 
       text-align: center;
-      color: $szin-13;
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
@@ -948,17 +929,10 @@ a {
       }      
     }
     ol {
-      color: $szin-13;
-      font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
-      line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
-      margin-left: 2.5rem;
+      margin-left: 3rem;
 
       @media only screen and (min-width: 960px) {
         max-width: 90rem;
-      }
-
-      li {
-        color: $szin-10;
       }
     }
 
@@ -1055,5 +1029,63 @@ a {
     h3{
       margin-bottom: 2rem;
     }    
+  }
+  .tooltip {
+    position: relative;
+    width: max-content;
+    text-align: center;
+    margin: 0 auto;
+    white-space: pre-wrap; 
+
+    
+    @media only screen and (min-width: 600px) {
+      text-align: left; 
+      margin: 0;   
+    }
+
+    &:hover .tooltiptext{
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .tooltiptext {
+      position: absolute;     
+      left: -70%;
+      padding: 1rem;
+      width: max-content;
+      background-color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      color: $szin-13;
+      font-weight: 300;
+      font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+      bottom: 125%;
+      text-align: left;
+      
+      visibility: hidden;
+      opacity: 0;      
+      z-index: 1;
+      border: 1px solid $szin-10;
+      border-radius: 1rem;
+      transition: opacity 0.3s; 
+      
+      @media only screen and (min-width: 600px) {
+        left: 0%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: $szin-10 transparent transparent transparent;
+
+        @media only screen and (min-width: 600px) {
+        left: 15%;
+      }
+      }
+    }
   }
 }

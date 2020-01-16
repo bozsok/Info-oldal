@@ -4,12 +4,9 @@
 @media only screen and (min-width: 768px) {
   // Navigáció
   .nav {
-    width: 95%;
-    max-width: 128rem;
 
     &__ul {
-      li:not(:last-child) {
-        margin-right: 2vw;
+      li{
         white-space: nowrap;
       }
     }
@@ -90,7 +87,6 @@
 
     .kartya__wrapper {
       grid-template-columns: repeat(2, minmax(30rem, 27vw));
-      //grid-template-rows: repeat(2, 10rem);
       grid-gap: 2rem;
     }
     .kartya {
@@ -152,10 +148,6 @@
 1920px széles kijelzőhöz
 *********************************/
 @media only screen and (min-width: 1921px) {
-  .nav {
-    width: 100%;
-    max-width: 192rem;
-  }
 
   .section-03 {
     height: 24rem;

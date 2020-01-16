@@ -14,12 +14,13 @@ $szin-12: #b46b42;
 $szin-13: #5a6086;
 $szin-14: #111538;
 $szin-15: #060725;
+$szin-16: #6f85b4;
 // Font
-$font-primary: "Roboto", sans-serif;
+ $font-primary: "Roboto", sans-serif;
 
 *,
 *::before,
-*::after {
+*::after { 
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -47,26 +48,36 @@ a {
 }
 
 h1 {
-  color: $szin-10;
+  color: $szin-13;
   font-size: calc(24px + (45 - 24) * ((100vw - 200px) / (1920 - 200)));
 }
 
 h2 {
   color: $szin-13;
-  font-size: calc(
-    14px + (30 - 14) * ((100vw - 200px) / (1920 - 200)));
+  font-size: calc(14px + (30 - 14) * ((100vw - 200px) / (1920 - 200)));
 }
+
 h3 {
-  color: $szin-10;
-  font-size: calc(
-    13px + (26 - 13) * ((100vw - 200px) / (1920 - 200)));
+  color: $szin-16;
+  font-size: calc(13px + (26 - 13) * ((100vw - 200px) / (1920 - 200)));
 }
 
 p {
-  color: $szin-10;
-  font-size: calc(
-    12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+  color: $szin-16;
+  font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
   line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));
+}
+
+ol,
+ul {
+  color: $szin-16;
+  font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
+  line-height: calc(18px + (24 - 18) * ((100vw - 200px) / (1920 - 200)));    
+
+  li {
+    color: $szin-16;
+    width: max-width;
+  }
 }
 
 #visszaNyil {

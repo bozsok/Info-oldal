@@ -35,7 +35,7 @@ document.querySelector('.iker-page').style.display = 'grid';  ///////ÁTÍRNI, H
 //Megjelenítem a TANANYAG oldal 1. óráját
 document.querySelector('.ora_01-page').style.display = 'grid';   //////ÁTÍRNI, HA VÉGEZTEM .ora_01-page-re!
 //Megjelenítem a FEALADATOK oldal 1. napját
-document.querySelector('.nap_01-page').style.display = 'grid';   //////ÁTÍRNI, HA VÉGEZTEM .ora_01-page-re!
+document.querySelector('.nap_02-page').style.display = 'grid';   //////ÁTÍRNI, HA VÉGEZTEM .ora_01-page-re!
 
 //Kigyűjtöm az IKER linkekhez tartozó oldalakat és a linkre kattintva betöltöm azokat
 const pageLink = document.querySelectorAll('.page-link');

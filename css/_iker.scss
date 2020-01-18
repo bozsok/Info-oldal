@@ -8,8 +8,8 @@
   }
 }
 a {
-  font-weight: 700;
-  color: $szin-08;
+  font-weight: 300;
+  color: $szin-13;
 }
 // Itt kezdődik az alap osztály, amely meghatározza a kinmézetet
 .container__iker {
@@ -358,9 +358,11 @@ a {
       @media only screen and (min-width: 600px) {
       grid-column: 1/9;
       }
-      @media only screen and (min-width: 960px) {
-        grid-column: 2/12;        
+      @media only screen and (min-width: 768px) {
         justify-self: start;
+      }
+      @media only screen and (min-width: 960px) {
+        grid-column: 2/12;      
       }      
     }
     ol {      
@@ -499,19 +501,6 @@ a {
       grid-row: 14/15;
     }
   }
-  img{
-
-  }
-  ul{
-    li{
-
-    }
-  }
-  ol{
-    li{
-
-    }
-  }
 }
 .ora_03-page {
   h2 {
@@ -541,6 +530,9 @@ a {
     &:nth-child(23) {
       grid-row: 22/23;
     }
+    &:nth-child(26) {
+      grid-row: 25/26;
+    }    
   }
   p {
     &:nth-child(2) {
@@ -573,6 +565,9 @@ a {
     &:nth-child(24) {
       grid-row: 23/24;
     }
+    &:nth-child(27) {
+      grid-row: 26/27;
+    }
   }
   img {
     &:nth-child(11) {
@@ -596,14 +591,11 @@ a {
       width: 60%;
     }
   }
-  ul{
-    li{
-
-    }
-  }
-  ol{
-    li{
-
+  ol{    
+    &:nth-child(25)
+    {
+      grid-row: 24/25;
+      padding: 2rem 0 0 0;
     }
   }
 }
@@ -729,6 +721,7 @@ a {
   ol{
     &:nth-child(15) {
       grid-row: 15/16;
+      padding: 2rem 0 0 0;
     }
   }
 }
@@ -844,6 +837,7 @@ a {
   ol{
     &:nth-child(15) {
       grid-row: 15/16;
+      padding: 2rem 0 0 0;
     }
   }
 }
@@ -959,6 +953,7 @@ a {
   ol{
     &:nth-child(15) {
       grid-row: 15/16;
+      padding: 2rem 0 0 0;
     }
   }
 }

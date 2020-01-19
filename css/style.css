@@ -729,9 +729,6 @@ a {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
   }
 }
 
@@ -941,9 +938,6 @@ a {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
 }
 
@@ -2877,6 +2871,13 @@ a {
   grid-column: 1/5;
   display: none;
   overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -2895,8 +2896,16 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .feladatok-page .panel {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .feladatok-page .panel p {
-  margin: 2rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
 @media only screen and (min-width: 960px) {
@@ -2906,18 +2915,21 @@ a {
 }
 
 .feladatok-page .panel .btn-02 {
-  margin: 0 auto;
+  margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .feladatok-page .panel .btn-02 {
-    margin: 0;
-  }
+.feladatok-page .panel img {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  width: 50%;
 }
 
 .feladatok-page .tartalom {
   -webkit-column-count: 2;
           column-count: 2;
+  -webkit-column-gap: 10rem;
+          column-gap: 10rem;
   text-align: left;
 }
 
@@ -2939,15 +2951,13 @@ a {
   .feladatok-page .tartalom {
     -webkit-column-count: 5;
             column-count: 5;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
 .feladatok-page .tartalom span {
   font-weight: 700;
-}
-
-.feladatok-page .nap_02-page h3 {
-  margin-bottom: 2rem;
 }
 
 .tooltip {
@@ -2957,7 +2967,6 @@ a {
   width: max-content;
   text-align: center;
   margin: 0 auto;
-  white-space: pre-wrap;
 }
 
 @media only screen and (min-width: 600px) {
@@ -2974,7 +2983,6 @@ a {
 
 .tooltip .tooltiptext {
   position: absolute;
-  left: -70%;
   padding: 1rem;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -2986,6 +2994,7 @@ a {
   font-size: calc(12px + (18 - 12) * ((100vw - 200px) / (1920 - 200)));
   bottom: 125%;
   text-align: left;
+  white-space: pre-wrap;
   visibility: hidden;
   opacity: 0;
   z-index: 1;
@@ -2993,12 +3002,6 @@ a {
   border-radius: 1rem;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-}
-
-@media only screen and (min-width: 600px) {
-  .tooltip .tooltiptext {
-    left: 0%;
-  }
 }
 
 .tooltip .tooltiptext::after {
@@ -3012,9 +3015,39 @@ a {
   border-color: #a0b2da transparent transparent transparent;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .tooltip .tooltiptext::after {
     left: 15%;
+  }
+}
+
+.tooltip .bicikli {
+  left: -100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .tooltip .bicikli {
+    left: 0%;
+  }
+}
+
+.tooltip .dino {
+  left: -45%;
+}
+
+@media only screen and (min-width: 768px) {
+  .tooltip .dino {
+    left: 0%;
+  }
+}
+
+.tooltip .beka {
+  left: -20%;
+}
+
+@media only screen and (min-width: 768px) {
+  .tooltip .beka {
+    left: 0%;
   }
 }
 /*# sourceMappingURL=style.css.map */
